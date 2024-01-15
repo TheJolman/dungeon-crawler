@@ -12,10 +12,16 @@ public:
   void display() const;
   int getX() const;
   int getY() const;
+  void takeDamage();
+  void heal();
+  bool isAlive() const;
+  int getHP() const;
+  void moveTo(int x, int y);
 
 private:
   int x, y;
   const char** figure;
+  int hp;
   void drawFigure() const;
 };
 
