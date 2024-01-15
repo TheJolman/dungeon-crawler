@@ -5,7 +5,7 @@ SRCDIR := src
 BUILDDIR := build
 SOURCES := $(wildcard $(SRCDIR)/*.cpp)
 OBJECTS := $(patsubst $(SRCDIR)/%.cpp, $(BUILDDIR)/%.o, $(SOURCES))
-TARGET := $(BUILDDIR)/dungeon_crawler
+TARGET := $(BUILDDIR)/dungeon_crawler.out
 
 all: $(TARGET)
 
